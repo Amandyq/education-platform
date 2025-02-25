@@ -3,37 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кіру / Тіркелу</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Кіру</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Сайтқа кіру / Тіркелу</h1>
-    </header>
-    
-    <main>
-        <div class="form-container">
-            <h2>Тіркелу</h2>
-            <form id="registerForm">
-                <input type="text" placeholder="Аты-жөніңіз" required>
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Құпиясөз" required>
-                
-                <label for="classSelect">Сыныбыңыз:</label>
-                <select id="classSelect" required>
-                    <option value="5A">5А</option>
-                    <option value="5B">5Б</option>
-                    <option value="6A">6А</option>
-                    <option value="6B">6Б</option>
-                    <option value="7A">7А</option>
-                    <option value="7B">7Б</option>
-                </select>
-                
-                <button type="submit">Тіркелу</button>
-            </form>
-        </div>
-    </main>
-    
-    <script src="script.js"></script>
+    <div class="container">
+        <h2>Кіру</h2>
+        <form action="dashboard.html" method="POST">
+            <label for="username">Логин:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Құпия сөз:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Кіру</button>
+        </form>
+        <p>Тіркелмегенсіз бе? <a href="register.html">Тіркелу</a></p>
+    </div>
 </body>
 </html>
