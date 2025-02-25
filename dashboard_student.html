@@ -3,38 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Оқушы кабинеті</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Оқушы панелі</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Оқушы кабинеті</h1>
+        <h1>Оқушы панелі</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Басты бет</a></li>
-                <li><a href="assignments_index.html">Тапсырмалар</a></li>
-                <li><a href="tests_index.html">Тесттер</a></li>
-                <li><a href="leaderboard_index.html">Рейтинг</a></li>
-                <li><a href="achievements_index.html">Жетістіктер</a></li>
-                <li><a href="notifications_index.html">Хабарламалар</a></li>
+                <li><a href="assignments.html">Тапсырмалар</a></li>
+                <li><a href="leaderboard.html">Рейтинг</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+                <li><a href="logout.html">Шығу</a></li>
             </ul>
         </nav>
     </header>
-    
     <main>
-        <section>
-            <h2>Қош келдіңіз, оқушы!</h2>
-            <p>Сіздің жетістіктеріңізді бақылап, тапсырмаларды орындаңыз.</p>
-            <ul>
-                <li>Ағымдағы рейтинг: <strong>Қола</strong></li>
-                <li>Жаңа тапсырмалар: <a href="assignments_index.html">Қарау</a></li>
-                <li>Өткен тесттер: <a href="tests_index.html">Қарау</a></li>
-            </ul>
+        <section class="dashboard">
+            <h2>Сәлем, оқушы!</h2>
+            <p>Сынып: <span id="student-class">10А</span></p>
+            <p>Сіздің деңгейіңіз: <span id="student-rank">Күміс</span></p>
+            <div class="stats">
+                <div class="stat-item">
+                    <h3>Аяқталған тапсырмалар</h3>
+                    <p>5/10</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Жинаған ұпайлар</h3>
+                    <p>750</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Келесі деңгейге дейін</h3>
+                    <p>250 ұпай</p>
+                </div>
+            </div>
         </section>
     </main>
-    
     <footer>
-        <p>&copy; 2025 Білім платформасы. Барлық құқықтар қорғалған.</p>
+        <p>&copy; 2025 Білім платформасы</p>
     </footer>
 </body>
 </html>
