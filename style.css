@@ -1,58 +1,80 @@
+/* styles.css - Негізгі стильдер файлы */
+
 /* Жалпы стильдер */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
-header {
-    background-color: #007bff;
-    color: white;
-    padding: 15px;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-main {
+.container {
+    width: 80%;
+    margin: auto;
     padding: 20px;
-    text-align: center;
 }
 
+/* Батырмалар */
 button {
-    background-color: #007bff;
+    background-color: #007BFF;
     color: white;
-    border: none;
     padding: 10px 20px;
+    border: none;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 16px;
+    transition: background 0.3s ease;
 }
 
 button:hover {
     background-color: #0056b3;
 }
 
-footer {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
+/* Навигация */
+nav {
+    background-color: #007BFF;
+    padding: 10px 0;
     text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #0056b3;
+}
+
+/* Карточкалар */
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+/* Рейтинг белгішелері */
+.rank-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* Аватарлар */
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+/* Сыныптар */
+.class-item {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
