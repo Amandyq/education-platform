@@ -1,38 +1,53 @@
 <!DOCTYPE html>
-<html lang="kk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Жетістіктер</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Achievements</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Жетістіктер</h1>
+        <h1>Achievements</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Басты бет</a></li>
-                <li><a href="dashboard_student.html">Оқушы кабинеті</a></li>
-                <li><a href="dashboard_teacher.html">Мұғалім кабинеті</a></li>
-                <li><a href="dashboard_admin.html">Әкімші кабинеті</a></li>
+                <li><a href="dashboard_student.html">Dashboard</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="assignments.html">Assignments</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="logout.html">Logout</a></li>
             </ul>
         </nav>
     </header>
-    
     <main>
-        <section>
-            <h2>Оқушылардың жетістіктері</h2>
-            <p>Төменде оқушылардың алған марапаттары көрсетілген:</p>
-            <ul>
-                <li>Оқушы 1 - "Алтын жүлде"</li>
-                <li>Оқушы 2 - "Күміс жүлде"</li>
-                <li>Оқушы 3 - "Қола жүлде"</li>
-            </ul>
+        <section class="achievements">
+            <h2>Your Achievements</h2>
+            <div class="achievement-list">
+                <div class="achievement">
+                    <img src="images/bronze_badge.png" alt="Bronze Badge">
+                    <p>Bronze Level Achieved</p>
+                </div>
+                <div class="achievement">
+                    <img src="images/silver_badge.png" alt="Silver Badge">
+                    <p>Silver Level Achieved</p>
+                </div>
+                <div class="achievement">
+                    <img src="images/gold_badge.png" alt="Gold Badge">
+                    <p>Gold Level Achieved</p>
+                </div>
+                <div class="achievement">
+                    <img src="images/diamond_badge.png" alt="Diamond Badge">
+                    <p>Diamond Level Achieved</p>
+                </div>
+                <div class="achievement">
+                    <img src="images/master_badge.png" alt="Master Badge">
+                    <p>Master Level Achieved</p>
+                </div>
+            </div>
         </section>
     </main>
-    
     <footer>
-        <p>&copy; 2025 Білім платформасы. Барлық құқықтар қорғалған.</p>
+        <p>&copy; 2025 Gamified Learning Platform</p>
     </footer>
 </body>
 </html>
